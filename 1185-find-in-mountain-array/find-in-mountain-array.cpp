@@ -1,6 +1,6 @@
 class Solution {
 public:
-    //This function is already taught in my YouTube Video - https://www.youtube.com/watch?v=Op07kT-LoH8 ("Peak Index in a Mountain Array")
+ 
     int peakIndexInMountainArray(MountainArray &mountainArr) {
         int n = mountainArr.length();
         
@@ -47,7 +47,7 @@ public:
             
             if(mountainArr.get(mid) == target) {
                 return mid;
-            } else if(mountainArr.get(mid) > target) { //Because the array in right side of peak is in descending order
+            } else if(mountainArr.get(mid) > target) { 
                 l = mid+1;
             } else {
                 r = mid-1;
